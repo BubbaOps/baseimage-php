@@ -43,7 +43,7 @@ There are some common tools that PHP Developers keep around, we have made it a p
 * [Pickle](https://github.com/FriendsOfPHP/pickle)
 * [Pecl](https://pecl.php.net/)_*_
 
-_* Deprecated in PHP 7.4_
+_* Deprecated in PHP 7.4 try to use pickle instead._
 
 ## Versions
 All images are currently based on Ubuntu 18.04 on which we provide standard php builds for PHP 7.2, 7.3, 7.4, and 8.0.
