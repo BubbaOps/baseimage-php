@@ -246,4 +246,25 @@ RUN set -eux; \
 	\ 
 	rm -rf /var/lib/apt/lists/*; 
 
+RUN set -eux \
+\
+	&& unset DEB_MULTIARCH \
+	&& unset GNU_ARCH \
+	&& unset GPG_KEYS \
+	&& unset PERSISTENT_DEPS \
+	&& unset PHP_BUILD_DEPS \
+	&& unset PHP_CFLAGS \
+	&& unset PHP_CPPFLAGS \
+	&& unset PHP_INI_DIR \
+	&& unset PHP_LDFLAGS \
+	&& unset PHP_SHA256 \
+	&& unset PHP_SRC_DIR \
+	&& unset PHP_URL \
+	&& unset PHP_VERSION \
+	&& unset PHPIZE_DEPS \
+	&& unset PICKLE_SHA256 \
+	&& unset PICKLE_URL \
+	&& unset SRC_DIR \
+	&& unset PICKLE_VERSION 
+	
 CMD ["/bin/bash"]
