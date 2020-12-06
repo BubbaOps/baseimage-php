@@ -23,18 +23,29 @@ It also means that if we latter decide to upgrade one of the extensions, we can 
 
 To that end, we have also retained all of the source and dev files used _(another departure from the official php image)_ in order to have everything we need if we decide to build something in a specific dev environment later.
 
+### Static Extension List
+|            |            |           |          |
+|------------|------------|-----------|----------|
+| Core       | ctype      | date      | dom      |
+| fileinfo   | filter     | ftp       | hash     |
+| iconv      | json       | libxml    | pcre     |
+| PDO        | Phar       | posix     | standard |
+| Reflection | session    | SimpleXML | SPL      |
+| tokenizer  | xml        | xmlreader | xmlwriter|
+
 ### Shared Extension List
 |            |            |           |          |
 |------------|------------|-----------|----------|
 | bcmath     | bz2        | calendar  | curl     |
 | exif       | gd         | gettext   | intl     |
-| mbstring   | mysqli     | mysqlnd   | opcache  |
-| openssl    | pcntl      | pdo_mysql | pdo_psql |
-| pdo_sqlite | pdo_sqlsrv | pgsql     | readline |
+| mbstring*  | mysqli     | mysqlnd   | opcache  |
+| openssl*   | pcntl      | pdo_mysql | pdo_psql |
+| pdo_sqlite | pdo_sqlsrv | pgsql     | readline*|
 | redis      | soap       | sockets   | sodium   |
 | sqlite3    | sqlsrv     | unixODBC  | xdebug   |
-| xsl        | yaml       | zip       | zlib     |
+| xsl        | yaml       | zip*      | zlib*    |
 
+_* These extensions are enabled by default._
 
 ### Pre-Installed Tools
 There are some common tools that PHP Developers keep around, we have made it a point to pre-install them and ensure they are on the path.
