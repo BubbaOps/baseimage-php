@@ -44,6 +44,7 @@ There are some common tools that PHP Developers keep around, we have made it a p
 * [Pecl](https://pecl.php.net/)_*_
 
 _* Deprecated in PHP 7.4_
+
 ## Versions
 All images are currently based on Ubuntu 18.04 on which we provide standard php builds for PHP 7.2, 7.3, 7.4, and 8.0.
 
