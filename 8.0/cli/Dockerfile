@@ -1,5 +1,7 @@
 FROM phusion/baseimage:bionic-1.0.0
 
+LABEL maintainer="Bubba Hines <bubba@bubbaops.com> (@bubbaops)"
+
 ENV GNU_ARCH="x86_64-linux-gnu"
 ENV DEB_MULTIARCH="x86_64-linux-gnu"
 ENV SRC_DIR="/usr/src"
